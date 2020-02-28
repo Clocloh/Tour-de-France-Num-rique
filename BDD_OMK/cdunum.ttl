@@ -4,51 +4,55 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix fup8: <https://compagnonsdunumerique.fr/onto/fup8> .
-@prefix teach: <http://linkedscience.org/teach/ns#> .
+@prefix cdunum: <https://compagnonsdunumerique.fr/onto/cdunum> .
 
-<https://compagnonsdunumerique.fr/onto/fup8> a owl:Ontology ;
+<https://compagnonsdunumerique.fr/onto/cdunum> a owl:Ontology ;
     dcterms:title "Formation Université Paris 8" .
 
 
+cdunum:HasFormation a rdf:Property ;
+    rdfs:label "A comme formation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
 
-fup8:Datedébut a rdf:Property ;
+
+cdunum:Datedebut a rdf:Property ;
     rdfs:label "Date de début" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
 
-fup8:Datefin a rdf:Property ;
+cdunum:Datefin a rdf:Property ;
     rdfs:label "Date de Fin" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:heure a rdf:Property ;
+cdunum:heure a rdf:Property ;
     rdfs:label "heure" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:Adresse a rdf:Property ;
+cdunum:Adresse a rdf:Property ;
     rdfs:label "Adresse" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:CV a rdf:Property ;
+cdunum:CV a rdf:Property ;
     rdfs:label "CV" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:Date_naissance a rdf:Property ;
+cdunum:Date_naissance a rdf:Property ;
     rdfs:label "Date de naissance" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-fup8:Nombre_années a rdf:Property ;
+cdunum:Nombre_annees a rdf:Property ;
     rdfs:label "Nombre d'années" ;
     rdfs:domain o:Resource ;    
     vs:term_status "experimental" .
 
-fup8:Domaine a rdf:Property ;
+cdunum:Domaine a rdf:Property ;
     rdfs:label "Domaine" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
