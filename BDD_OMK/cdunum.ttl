@@ -15,6 +15,11 @@ cdunum:HasFormation a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+    cdunum:HasDiplome a rdf:Property ;
+    rdfs:label "A comme diplome" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 
 cdunum:Datedebut a rdf:Property ;
     rdfs:label "Date de début" ;
