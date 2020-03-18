@@ -1,0 +1,465 @@
+* {
+	box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "Futura";
+    src: url("./futura.tff") format("tff");
+}
+
+body {
+	margin: 0;
+}
+
+body {
+	color: #ff5b22;
+	font-family: Futura;
+}
+
+#ipmi {
+	font-family: Futura ;
+	text-align: center;
+    color: #ff5b22;
+    font-weight: bold;
+	margin: 0 0 -3% 0;
+}
+
+.gpd-navbar {
+	width: 100%;
+}
+
+#ib49i {
+	display: none;
+}
+
+#ir0t9 {
+	display: none;
+}
+
+.gpd-navbar {
+	width: 100%;
+}
+
+#iucr1 {
+	margin: 0 0 1% 0;
+	width: 35%;
+	max-width: 100%;
+}
+
+#cont_rechercher {
+	text-align: center;
+}
+
+#Rechercher {
+	padding: 1% 1% 1% 1%;
+	font-size: 189%;
+	margin: -1% 0 0 0;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #003280;
+	border: 0 solid #555555;
+}
+
+#i0e4 {
+	text-align: center;
+}
+
+#sous_titre {
+	text-align: center;
+	color: #003280;
+	font-size: 83%;
+	padding: 0 10% 0 10%;
+	margin: -6% 0 0 0;
+}
+
+#i6xw {
+	box-shadow: 0 0 0 0px;
+	margin: 30px 25% 16px 25%;
+}
+
+#ib8hw {
+	padding: 0 0 0 1%;
+	margin: 0 0 0 0;
+	background-color: #003280;
+	color: #ffffff;
+}
+
+#imniu {
+	background-color: #ff5b22;
+	padding: 1% 10% 1% 10%;
+	margin: 0 0 0 0;
+}
+
+#i7q51 {
+	padding: 0 0 0 1%;
+	background-color: #003280;
+}
+
+#iq02k {
+	padding: 0 0 0 1%;
+	background-color: #003280;
+}
+
+#i68vg {
+	padding: 0 0 0 1%;
+	background-color: #003280;
+}
+
+#itcz {
+	background-color: #000000;
+	margin: 1% 0 0 0;
+}
+
+#i7w7 {
+	margin: 1% 0 0 0;
+}
+
+#i4c2 {
+	margin: 1% 0 0 0;
+}
+
+#ijg2k {
+	margin: 3% 0 0 0;
+}
+
+#container_envoyer {
+	text-align: center;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#sous_titre_container {
+	max-width: 1200%;
+	margin: 0 0 0 5%;
+	padding: 5% 0 1% 0;
+}
+
+.section-form1 {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color: #353535;
+	background-color: white;
+}
+
+.gpd-navbar {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	#ib8hw {
+		text-align: left;
+		background-color: #003280;
+		padding: 0 0 0 1%;
+		color: #eeeeee;
+	}
+	#ipmi {
+		margin: 1% 0 3% 0;
+	}
+	#cont_rechercher {
+		text-align: center;
+	}
+	#Rechercher {
+		text-align: center;
+		font-family: Impact, Charcoal, sans-serif;
+		font-size: 213%;
+		color: #003280;
+		margin: 1% 0 0 0;
+		padding: 0 0 0 0;
+	}
+	#i0e4 {
+		text-align: center;
+	}
+	#sous_titre_container {
+		padding: 0 0 7% 0;
+	}
+	#sous_titre {
+		font-size: 12px;
+		color: #003280;
+		margin: -7% 0 0 0;
+		padding: 0 0 0 0;
+	}
+	#i6xw {
+		margin: 0 0 0 0;
+		padding: 0 0 20px 0;
+		text-align: center;
+		color: #ffffff;
+		border: 0 solid #ffffff;
+	}
+	#form_group_1 {
+		text-align: center;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	#i7q51 {
+		background-color: #003280;
+		padding: 0 0 0 1%;
+		color: #ffffff;
+	}
+	#itcz {
+		margin: 1% 0 0 0;
+	}
+	#iq02k {
+		background-color: #003280;
+		padding: 0 0 0 1%;
+		color: #ffffff;
+	}
+	#i68vg {
+		background-color: #003280;
+		padding: 0 0 0 1%;
+		color: #ffffff;
+	}
+	#i7w7 {
+		margin: 1% 0 0 0;
+	}
+	#i4c2 {
+		margin: 1% 0 0 0;
+	}
+	#iucr1 {
+		color: black;
+		margin: -7% 0 0 0;
+		width: 511px;
+	}
+	#imniu {
+		padding: 1% 20% 1% 20%;
+		background-color: #ff5b22;
+		margin: 0 0 0 0;
+	}
+	#ijg2k {
+		margin: 0 0 2% 0;
+	}
+	#imfy {
+		margin: 0 0 0 0;
+	}
+	#form_group_2 {
+		margin: 0 16% 16px 16%;
+	}
+	#container_banniere {
+		background-position: left top;
+		background-size: auto;
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/51075f85a4974beca670614d419360a3_banniere.jpg);
+		background-repeat: no-repeat;
+		background-attachment: local;
+		padding: 0 0 20px 0;
+	}
+	#iz3iz {
+		background-position: left top;
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/1cb2d410b3ff4418a0f49e226cf65e02_profil.jpg);
+		background-repeat: no-repeat;
+		background-attachment: local;
+		color: rgba(0, 86, 179, 0);
+		background-size: contain;
+		margin: 3% 0 0 17%;
+		height: 14%;
+		width: 11%;
+	}
+	#isql4 {
+		background-position: left top;
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/daedff237321490f9ef9dfbb2b1a262d_valise.jpg);
+		background-repeat: no-repeat;
+		background-attachment: local;
+		background-size: contain;
+		color: rgba(0, 86, 179, 0);
+		margin: 3% 0 0 7%;
+		width: 11%;
+		height: 14%;
+	}
+	#iyyzg {
+		color: rgba(0, 86, 179, 0);
+		background-position: left top;
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/8ae5fa83f24e453dbe07e29b70a464ae_loupe.jpg);
+		background-repeat: no-repeat;
+		background-attachment: local;
+		background-size: contain;
+		margin: 3% 0 0 7%;
+		width: 11%;
+		height: 14%;
+	}
+	#i63vz {
+		color: rgba(0, 86, 179, 0);
+		background-position: left top;
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/dc19b178305c490eb087deea9030cf28_map.jpg);
+		background-repeat: no-repeat;
+		background-attachment: local;
+		background-size: contain;
+		margin: 3% 0 0 7%;
+		width: 11%;
+		height: 14%;
+	}
+	#section {
+		padding: 100px 0 15px 0;
+	}
+}
+
+@media (max-width: 375px) {
+	#ipmi {
+		font-size: 24px;
+		font-weight: 700;
+		font-family: Arial Black, Gadget, sans-serif;
+		border: 0 solid #ff5b22;
+		margin: 4.079999999999998% 0 5.079999999999998% 0;
+	}
+	#cont_rechercher {
+		padding: 5px;
+		min-height: 50px;
+		text-align: center;
+		margin: -7% 0 0 0;
+	}
+	#Rechercher {
+		margin: 10% 0 0 0;
+		color: #003280;
+		font-family: Impact, Charcoal, sans-serif;
+		font-size: 27px;
+		padding: 0 10% 0 10%;
+	}
+	#i0e4 {
+		padding: 5px;
+		text-align: center;
+	}
+	#sous_titre {
+		font-size: 10px;
+		margin: -3% 0 0 0;
+		height: 0;
+		color: #003280;
+	}
+	#sous_titre_container {
+		padding: 0;
+	}
+	#ib49i {
+		display: none;
+	}
+	#ir0t9 {
+		display: none;
+	}
+	#ib8hw {
+		background-color: rgb(0, 50, 128);
+		text-align: left;
+		padding: 5% 2% 5% 2%;
+		white-space: normal;
+		color: #eeeeee;
+	}
+	#form_group_1 {
+		padding: 0 0 0 0;
+	}
+	#iq02k {
+		background-color: rgb(0, 50, 128);
+		padding: 5% 2% 5% 2%;
+	}
+	#form_group_2 {
+		border: 0 none rgba(238, 238, 238, 0);
+		padding: 0 0 0 0;
+		background-color: rgba(53, 53, 53, 0);
+	}
+	#i6xw {
+		margin: 2% 0 19% 0;
+		padding: 3% 0 0 0;
+		border: 0 solid rgba(0, 0, 0, 0.15);
+		background-color: #ffffff;
+		box-shadow: 0 0 0 0px;
+	}
+	#imniu {
+		background-color: #ff5b22;
+		width: 95%;
+		border: 0 none rgb(255, 255, 255);
+		padding: 3% 10% 3% 10%;
+		color: #eeeeee;
+	}
+	#i68vg {
+		background-color: #003280;
+		padding: 5% 2% 5% 2%;
+	}
+	#i7q51 {
+		background-color: rgb(0, 50, 128);
+		padding: 5% 2% 5% 2%;
+		color: #eeeeee;
+	}
+	#container_envoyer {
+		padding: 5px;
+		min-height: 50px;
+		text-align: center;
+		border-radius: 0 0 0 0;
+	}
+	#itcz {
+		background-color: rgba(0, 0, 0, 0.05);
+		margin: 3% 0 0 0;
+	}
+	#i7w7 {
+		height: 0;
+		margin: 10px 10px 10px 10px;
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+	#i4c2 {
+		height: 0;
+		margin: 10px 10px 10px 10px;
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+	#ijg2k {
+		height: 3px;
+		margin: 10px 10px 10px 10px;
+	}
+	#iucr1 {
+		margin: -8% 0 0 0;
+		width: 74%;
+	}
+	#container_banniere {
+		padding: 5% 5% 5% 5%;
+		min-height: 68px;
+		background-position: left top;
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/51075f85a4974beca670614d419360a3_banniere.jpg);
+		background-attachment: local;
+		background-repeat: no-repeat;
+		background-size: auto;
+		margin: auto 0 0 0;
+	}
+	#i63vz {
+		color: rgba(217, 131, 166, 0);
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/dc19b178305c490eb087deea9030cf28_map.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-attachment: local;
+		background-position: left top;
+		margin: 2% 0 0 9%;
+	}
+	#isql4 {
+		color: rgba(217, 131, 166, 0);
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/daedff237321490f9ef9dfbb2b1a262d_valise.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-attachment: local;
+		background-position: left top;
+		margin: 2% 0 0 8%;
+	}
+	#iz3iz {
+		color: rgba(217, 131, 166, 0);
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/1cb2d410b3ff4418a0f49e226cf65e02_profil.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-attachment: local;
+		margin: 2% 0 0 15%;
+		background-position: left top;
+	}
+	#iyyzg {
+		color: rgba(217, 131, 166, 0);
+		background-image: url(https://cdn.grapedrop.com/u78ad25b27f974b10a26c759004be0371/8ae5fa83f24e453dbe07e29b70a464ae_loupe.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-attachment: local;
+		background-position: left top;
+		margin: 2% 0 0 9%;
+	}
+	#iv0zu {
+		display: none;
+	}
+	#ihlxt {
+		display: none;
+	}
+	#irw2f {
+		text-align: center;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	#section {
+		padding: 0 0 61px 0;
+	}
+}
