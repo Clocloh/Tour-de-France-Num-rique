@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- -------------
+    Custom Css  
+        
+------------------ -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <title>::: Login :::</title>
+
+  
+
+
+
+    <style>
+        .boutonmenuprincipal {
+        background-color:   #003280;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding-left:144px;
+        padding-right: 144px;
+        margin-top:10px;
+        font-size: 23px;
+        }
+        .boutonmenuprincipal:hover {
+        background-color: #ff5b22;
+        }
+        .dropdown {
+        position: center;
+        display: inline-block;
+        }
+        .dropdown-child {
+        display: none;
+        background-color: #ff5b22;
+        min-width: 5px;
+        font-size: 20px;
+        }
+        .dropdown-child a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+
+        }
+        .dropdown:hover .dropdown-child {
+        display: block;
+        }
+        </style>
+
+
+</head>
+
+<body class="login">
+
+    <section class="main-area">
+        <div class="container-fluid">
+            <div class="row h100">
+                <div class="col-md-12 p-0">
+                    <div class="login">
+                        <div class="center-box">
+                            <div class="title">
+                                <br>
+                                <br>
+                            </div>
+                            <div class="form-wrap">
+                                <form class="pui-form" method="post" action="">
+
+                                    <!-- ------------ CRÉATION DU PRENOM ET NOM  ------------------ -->
+                                    <table>
+                                        <tr>
+                                          <td>
+                                            <div class="form-wrap">
+                                                <form class="pui-form" method="post" action="">
+        
+                                               <div class="pui-form__element">
+                                            <label class="animated-label">Prénom</label>
+                                            <input type="text" id="inputEmail" class="form-control" placeholder=""
+                                                required="">
+                                        </div>
+        
+                                        </form>
+                                        </div>
+                                    </td>
+        
+                                        <td>  &nbsp </td>
+                                        
+                                          <td>
+                                            <div class="form-wrap">
+                                                <form class="pui-form" method="post" action="">
+        
+                                              <div class="pui-form__element">
+                                            <label class="animated-label">Nom</label>
+                                            <input type="email" id="inputEmail" class="form-control" placeholder=""
+                                                type="text" name="password">
+                                        </div>
+                                    </form>
+                                </div>
+        
+                                    </td>
+                                        </tr>
+        
+                                       </table> 
+
+
+                                    <!-- ------------ ADRESSE MAIL ------------------ -->
+                                    <div class="pui-form__element">
+                                        <label class="animated-label">Adresse mail</label>
+                                        <input type="email" id="inputEmail" class="form-control" placeholder=""
+                                            required="">
+                                    </div>
+
+                                    <!-- ------------ CRÉATION DE MP ------------------ -->
+                                    <div class="pui-form__element">
+                                        <label class="animated-label">Créer un mot de passe </label>
+                                        <input type="password" id="inputEmail" class="form-control" placeholder=""
+                                            type="password" name="password">
+                                    </div>
+           
+                                       <!-- ------------ MENU DEROULANT ------------------ -->
+                                    <div class="dropdown">
+                                        <button class="boutonmenuprincipal">Statut</button>
+                                        <div class="dropdown-child">
+                                        <a href=" ">Etudiant</a>
+                                        <a href=" ">Entreprise</a>
+                                        <a href=" ">Ecole de formation</a>
+                                        </div>
+                                    </div>
+
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                    <div class="pui-form__element">
+                                        <button class="btn btn-lg btn-primary btn-block" type="submit">Créer mon profil </button>
+            
+                                    </div>
+                                    <br/>
+                                    
+                                </form>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
