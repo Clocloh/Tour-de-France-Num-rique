@@ -6,13 +6,6 @@
 */
 
 
-@font-face {
-  font-family: "Futura";
-  src: url("./futura.tff") format("tff");
-}
-
-
-
 :root {
   --var-color-primary: #ff5b22;
 }
