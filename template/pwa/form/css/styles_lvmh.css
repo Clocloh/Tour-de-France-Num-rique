@@ -3019,7 +3019,7 @@ button.btn--std.is-active {
  margin-bottom:0 !important
 }
 .filters-heading__filters,
-.filters-heading__filters .form__select {
+.filters-heading__filters {
  font-size:.8125em;
  line-height:1.84615385em;
  font-family:Arial, sans-serif;
