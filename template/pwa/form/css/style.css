@@ -232,8 +232,8 @@ textarea {
 audio,
 canvas,
 video {
-  display: inline-block;
-  *display: inline;
+  /*display: inline-block;
+  *display: inline;*/
   *zoom: 1;
   max-width: 100%;
 }
@@ -4765,7 +4765,7 @@ body {
 
 .main-area .login{
   display: -webkit-box;
-  display: -ms-flexbox;
+   /*display: -ms-flexbox;*/
   /*display: flex;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -4774,7 +4774,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
