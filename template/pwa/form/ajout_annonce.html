@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- -------------
+    Custom Css  
+        
+------------------ -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <title>::: Login :::</title>
+
+  
+
+
+
+    <style>
+      
+        </style>
+
+
+</head>
+
+<body class="login">
+
+    <section class="main-area">
+        <div class="container-fluid">
+            <div class="row h100">
+                <div class="col-md-12 p-0">
+                    <div class="login">
+                        <div class="center-box">
+                             <br>
+                            <br>
+                            <div class="title">
+                                <h4>AJOUTER UNE ANNONCE</h4>
+
+                                <br>
+
+                            </div>
+                            <div class="form-wrap">
+                                <form class="pui-form" method="post" action="">
+                                   
+
+
+                                <!-- Métier -->
+                                <div class="pui-form__element">
+                                    <div class="custom__select">
+                                        <select name="metier" class="form__select form__select--large form__select--offer" title="Choisissez un métier" >
+                                            <option value="" selected="selected">Métier</option>
+                                                                                    <option value="102" >Communication & Media</option>
+                                                                                    <option value="103" >Design & Création</option>
+                                                                                    <option value="121" >Digital</option>
+                                                                                    <option value="112" >Recherche & Innovation</option>
+                                                                                    <option value="107" >Tech. de l'information/Systèmes d'information</option>
+                                        </select>
+                                    </div>
+                                        </div>
+
+                                        <br>
+
+                                <!-- Zone géographique -->
+                                <div class="pui-form__element">
+                                    <div class="custom__select">
+                                        <select name="place" id="place" class="form__select form__select--large form__select--offer" title="Choisissez une zone géographique">
+                                            <option value="" selected="selected">Zone géographique</option>
+                                                                                        <option value="259" >Amériques</option>
+                                                                                        <option value="261" >Asie-Pacifique</option>
+                                                                                        <option value="258" >Europe (hors France)</option>
+                                                                                        <option value="162" >France (incl. DOM TOM)</option>
+                                                                                        <option value="260" >Japon</option>
+                                                                                        <option value="368" >Moyen Orient / Afrique</option>
+                                                                                                    </select>
+                                </div>
+                                    </div>
+                                    <br>
+                                <!-- Expérience professionnelle -->
+                                <div class="pui-form__element">
+                                    <div class="custom__select">
+                                        <select name="experience" id="experience" class="form__select form__select--large form__select--offer" title="Sélectionnez parmi les durées d'expérience professionnelle">
+                                            <option value="" selected="selected">Durée</option>
+                                                                                    
+                                                                                    <option value="8" >Débutant</option>
+                                                                                    <option value="2" >2 mois</option>
+                                                                                    <option value="3" >Minimum 2 mois</option>
+                                                                                    <option value="9" >Minimum 6 mois</option>
+                                                                                    <option value="10" >Minimum 1 ans</option>
+                                                                                    <option value="55" >Minimum 2 ans</option>
+                                                                                                    </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <!-- Groupe d'activités -->
+                                <div class="pui-form__element">                                    
+                                    <div class="custom__select">
+                                        <select name="activity" id="activity" class="form__select form__select--large form__select--offer" title="Choisissez un secteur d'activités">
+                                            <option value="" selected="selected">Secteur d'activités</option>
+                                                                                                                                            <option value="279" > Vins & Spiritueux</option>
+                                                                                    <option value="278" >Mode & Maroquinerie</option>
+                                                                                    <option value="280" >Parfums & Cosmétiques</option>
+                                                                                    <option value="333" >Montres & Joaillerie</option>
+                                                                                    <option value="334" >Distribution sélective</option>
+                                                                                    <option value="335" >Autres activités (hôtellerie, média, …)</option>
+                                                                                                    </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <!-- Type de contrat -->
+                                <div class="pui-form__element">                                    
+                                    <div class="custom__select">
+                                        <select name="contract" id="contract" class="form__select form__select--large form__select--offer" title="Choisissez un type de contrat">
+                                            <option value="" selected="selected">Type de contrat</option>
+                                                                                    <option value="2" >Emploi à durée indéterminée</option>
+                                                                                    <option value="45" >Emploi à durée déterminée</option>
+                                                                                    <option value="3" >Stage</option>
+                                                                                    <option value="13" >Contrat d'apprentissage / alternance</option>
+                                                                                                    </select>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <!-- ------------ Insertion annonce  ------------------ -->
+                                <font size = "3" > Annonce</font>
+                                <br>
+                                    <textarea cols="73%" rows="10%" type="text" name="Texte"> </textarea>
+                               
+                                
+                                <br>
+                                <br>
+                                <div class="pui-form__element">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Envoyer </button>
+                                </div>
+                               </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

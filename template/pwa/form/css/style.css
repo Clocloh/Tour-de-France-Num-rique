@@ -167,6 +167,65 @@ textarea {
   resize: vertical;
 }
 
+.filters-heading__filters,
+.filters-heading__filters .form__select {
+ font-size:.8125em;
+ line-height:1.84615385em;
+ font-family:Arial, sans-serif;
+ padding-top:0;
+ padding-bottom:0
+}
+
+.form__select {
+  font-family:Futura;
+  font-size:16px;
+  width:100%;
+  min-height:43px;
+  display:inline-block;
+  margin:0;
+  padding:0;
+  outline:none;
+  border:1px solid #ccc;
+  background:#003280;
+  color:white /*4c4c4c*/;
+  cursor:pointer;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  border-radius:0;
+  line-height:1.5em;
+  padding:.5625em 34px .625em 1.125em
+ 
+ }
+ .lt-ie10 .form__select {
+  padding-right:15px !important
+ }
+ .form__select::-ms-expand {
+  display:none
+ }
+ .form__select.form__item--w-error {
+  -moz-box-shadow:0px 0px 0px 2px #ea0000;
+  -webkit-box-shadow:0px 0px 0px 2px #ea0000;
+  box-shadow:0px 0px 0px 2px #ea0000;
+  border:none
+ }
+ .form__select--large {
+  width:100%
+ }
+ .form__select--centered {
+  font-size:.875em;
+  line-height:1.71428571em;
+  padding:.75em 16% .8125em 7%;
+  color:#000
+ }
+ .form__select--shadow {
+  box-shadow:0px 2px 0px 0px #dbdbdb
+ }
+
+ .form__select--large {
+  width:100%
+ }
+
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
@@ -4616,11 +4675,11 @@ body {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Futura;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
+  color: #4c4c4c;
 }
 
 .font-12 {
@@ -4701,13 +4760,13 @@ p {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Futura;
 }
 
 .main-area .login{
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4770,6 +4829,7 @@ body {
 .form-wrap {
   max-width: 352px;
   margin: 0 auto;
+  
 }
 
 
