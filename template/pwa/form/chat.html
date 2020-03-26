@@ -1,39 +1,80 @@
 <!DOCTYPE html>
-<html lang="fr" >
+<html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Chatbox #2</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet"> 
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- -------------
+    Custom Css
+------------------ -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/chat.css">
 
+
+    <title>::: Login :::</title>
 </head>
-<body  style="background-image: url('images/mapcdn.png'); 
-background-repeat: no-repeat; 
-background-size:100%;
-background-position: -100% -20%;">
-<!-- partial:index.partial.html -->
+
+<body class="login">
+
+    <section class="main-area">
+        <div class="container-fluid">
+            <div class="row h100">
+                <div class="col-md-12 p-0">
+                    <div class="login">
+                        <div class="center-box">
+                            <div class="title">
+
+
+
+                
+                               
+                            <br>
+
+                            </div>
+                            <div class="form-wrap">
+                                <!-- partial:index.partial.html -->
 <section class="chatbox js-chatbox">
-  <div class="chatbox__header">
-    <h3 class="chatbox__header-cta-text"><span class="chatbox__header-cta-icon"><i
-                  class="fas fa-comments"></i></span>Discussion</h3>
-    <button class="js-chatbox-toggle chatbox__header-cta-btn u-btn"><i class="fas fa-chevron-up"></i></button>
-  </div>
-  <!-- End of .chatbox__header -->
-  <div class="js-chatbox-display chatbox__display">
+    <div class="chatbox__header">
+      <h3 class="chatbox__header-cta-text"><span class="chatbox__header-cta-icon"><i
+                    class="fas fa-comments"></i></span>Discussion</h3>
+      <button class="js-chatbox-toggle chatbox__header-cta-btn u-btn"></button>
+    </div>
+    <!-- End of .chatbox__header -->
+    <div class="js-chatbox-display chatbox__display">
+  
+    </div>
+    <!-- End of .chatbox__display -->
+    <form class="js-chatbox-form chatbox__form">
+      <input type="text" class="js-chatbox-input chatbox__form-input" placeholder="Type your message..." required>
+      <button class="chatbox__form-submit u-btn"><i class="fas fa-paper-plane"></i></button>
+    </form>
+    <!-- End of .chatbox__form -->
+  
+  </section>
 
-  </div>
-  <!-- End of .chatbox__display -->
-  <form class="js-chatbox-form chatbox__form">
-    <input type="text" class="js-chatbox-input chatbox__form-input" placeholder="Type your message..." required>
-    <button class="chatbox__form-submit u-btn"><i class="fas fa-paper-plane"></i></button>
-  </form>
-  <!-- End of .chatbox__form -->
-<!--</section> -->
-<!-- End of .chatbox -->
-<!-- partial -->
-  <script  src="js/chat.js"></script>
+                                  <script  src="js/chat.js"></script>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
