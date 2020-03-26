@@ -6,6 +6,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  
 }
 
 .u-btn {
@@ -23,6 +24,7 @@ body {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   width: 50%;
+
 }
 .chatbox--is-visible {
   -webkit-transform: translatey(0);
