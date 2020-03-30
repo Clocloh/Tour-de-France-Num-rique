@@ -19,42 +19,6 @@
 
 
 
-    <style>
-        .boutonmenuprincipal {
-        background-color:   #003280;
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding-left:144px;
-        padding-right: 144px;
-        margin-top:10px;
-        font-size: 23px;
-        }
-        .boutonmenuprincipal:hover {
-        background-color: #ff5b22;
-        }
-        .dropdown {
-        position: center;
-        display: inline-block;
-        }
-        .dropdown-child {
-        display: none;
-        background-color: #ff5b22;
-        min-width: 5px;
-        font-size: 20px;
-        }
-        .dropdown-child a {
-        color: white;
-        padding: 20px;
-        text-decoration: none;
-        display: block;
-
-        }
-        .dropdown:hover .dropdown-child {
-        display: block;
-        }
-        </style>
-
 
 </head>
 
@@ -125,12 +89,16 @@
                                     </div>
            
                                        <!-- ------------ MENU DEROULANT ------------------ -->
-                                    <div class="dropdown">
-                                        <button class="boutonmenuprincipal">Statut</button>
-                                        <div class="dropdown-child">
-                                        <a href=" ">Etudiant</a>
-                                        <a href=" ">Entreprise</a>
-                                        <a href=" ">Ecole de formation</a>
+                                       <div class="pui-form__element">                                    
+                                        <div class="custom__select">
+                                            <select name="activity" id="activity" class="form__select form__select--large form__select--offer" title="Choisissez un statut">
+                                                <option value="" selected="selected">Statut</option>
+                                                                
+                                                                                        <option value="1" >Ecole</option>
+                                                                                        <option value="2" >Entreprise</option>
+                                                                                        <option value="3" >Etudiant</option>
+                                                                                        
+                                                                                        </select>
                                         </div>
                                     </div>
 
