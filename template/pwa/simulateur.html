@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>        
+
+    <style>
+        #mapid {
+            height: 600px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img class="responsive" src="./images/trait_haut.png">
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+                <a href="./connex.html">
+                    <img style="height:80px;" src="./images/CDN_logo.png">
+                </a>
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+
+                <ul class="list-group" id="lstResUni">
+                </ul>
+
+            </div>
+            <div class="col-8">
+                <div id="mapid"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-6">
+                <img class="responsive" src="./images/trait_bas.png">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var lat = 48.946538,
+            lng = 2.3632178;
+        var map = L.map('mapid').setView([lat, lng], 14);
+
+        L.tileLayer('//{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+            attribution: 'donn&eacute;es &copy; <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+            minZoom: 1,
+            maxZoom: 20
+        }).addTo(map);
+
+ 
+
+        //récupère la géolocalisation de l'utilisateur
+        var geo = false;
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (p) {
+                geo = p;
+                L.marker([p.coords.latitude, p.coords.longitude]).addTo(map);
+
+            });
+        }
+
+        //chargement de la liste des résidences
+        var urlRes = "data/itemsResidencesUniversitaires.json";
+        d3.json(urlRes, {crossOrigin: "anonymous"}).then(function(data) {
+            console.log(data);
+            d3.select("#lstResUni").selectAll('li').data(data).enter()
+                .append('li')
+                .attr('class',"list-group-item d-flex justify-content-between align-items-center")
+                .html(d => {
+                    return d["o:title"];
+                })
+                .on("click",d =>{
+                    console.log(d);
+                    let latlng = d["geo:lat_long"][0]["@value"].split(',');
+                    let m = L.marker([latlng[0], latlng[1]]).addTo(map);
+                    var latLngs = [ m.getLatLng() ];
+                    var markerBounds = L.latLngBounds(latLngs);
+                    map.fitBounds(markerBounds);
+
+                });
+        });
+
+
+    </script>
+
+
+</body>
+<html>
