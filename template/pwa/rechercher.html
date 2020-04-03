@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <!------ Debut de navigation ---------->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link rel="stylesheet" href="css/navigation.css">
+        <!------ Include the above in your HEAD tag ---------->
     <!-- -------------
     Custom Css
 ------------------ -->
@@ -16,18 +24,46 @@
 </head>
 
 <body class="login">
-
-    <ul>
-        <li><a href="./ajout_annonce.html">Ajouter une annonce</a>
-            <a href="./chat.html"> Chat </a>
-            <a href="./connex.html"> Connexion </a>
-            <a href="./inscrip.html">Inscription </a>
-            <a href="./profil_ecole.html"> Profil ecole </a>
-            <a href="./profil_entreprise.html"> Profil entreprise </a>
-            <a href="./profil_etudiant.html"> Profil etudiant </a>
-            <a href="./rechercher.html"> Rechercher</a>
-        </li>
-
+<!------ DEBUT  NAVIGATION ---------->
+<div id="wrapper" class="">
+        <div class="overlay" style="display: none;"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+           <ul class="nav sidebar-nav">
+              <li class="sidebar-brand">
+                 <a href="./ajout_annonce.html"a>CDN </a>
+              </li>
+              <li>
+                 <a href="./chat.html"><i class="glyphicon glyphicon-send"></i> Chat</a>
+              </li>
+              <li>
+                    <a href="./simulateur.html"><i class="glyphicon glyphicon-road"></i> Simultauer </a>
+                 </li>
+              <li>
+                 <a href="./inscrip.html"><i class="glyphicon glyphicon-user"></i> inscription</a>
+              </li>
+              <li>
+                 <a href="./profil_ecole.html"><i class="glyphicon glyphicon-home"></i> Profil ecole</a>
+              </li>
+              <li>
+                 <a href="./profil_entreprise.html"><i class="glyphicon glyphicon-briefcase"></i> Profile entreprise</a>
+              </li>
+              <li>
+                    <a href="./profil_etudiant.html"><i class="glyphicon glyphicon-folder-open"></i> Profile etudiant</a>
+                 </li>
+              <li>
+                 <a href="./rechercher.html"><i class="glyphicon glyphicon-search"></i> Rechercher</a>
+              </li>
+           </ul>
+        </nav>
+        <div id="page-content-wrapper">
+           <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+           <span class="hamb-top"></span>
+           <span class="hamb-middle"></span>
+           <span class="hamb-bottom"></span>
+           </button>
+           <div class="container">
+                 <!------ DEBUT CONTENT  ---------->
+  
     <section class="main-area">
         <div class="container-fluid">
             <div class="row h100">
@@ -92,6 +128,13 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
+
+     <!-- ----------- Fin navigation ------------------ -->
+</div>
+</div>
+</div>
+<script  src="js/navigation.js"></script>
+   <!-- ----------- Fin navigation ------------------ -->
 </body>
 
 </html>
