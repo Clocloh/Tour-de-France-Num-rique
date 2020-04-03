@@ -20,6 +20,15 @@
 
 
     <style>
+      body {
+    
+    font-size: 16px;}
+
+    textarea{
+padding:3px 10px 0px 10px;
+width: 100%; /* adapter à 100% ou moins selon besoin... */
+height: 100%; /* idem ci-dessus.... */
+}
       
         </style>
 
@@ -27,6 +36,16 @@
 </head>
 
 <body class="login">
+    <ul>
+        <li><a href="./ajout_annonce.html">Ajouter une annonce</a>
+            <a href="./chat.html"> Chat </a>
+            <a href="./connex.html"> Connexion </a>
+            <a href="./inscrip.html">Inscription </a>
+            <a href="./profil_ecole.html"> Profil ecole </a>
+            <a href="./profil_entreprise.html"> Profil entreprise </a>
+            <a href="./profil_etudiant.html"> Profil etudiant </a>
+            <a href="./rechercher.html"> Rechercher</a>
+        </li>
 
     <section class="main-area">
         <div class="container-fluid">
@@ -98,8 +117,8 @@
                                 <div class="pui-form__element">                                    
                                     <div class="custom__select">
                                         <select name="activity" id="activity" class="form__select form__select--large form__select--offer" title="Choisissez un secteur d'activités">
-                                            <option value="" selected="selected">Secteur d'activités</option>
-                                                                                                                                            <option value="279" > Vins & Spiritueux</option>
+                                                    <option value="" selected="selected">Secteur d'activités</option>
+                                                                                    <option value="279" > Vins & Spiritueux</option>
                                                                                     <option value="278" >Mode & Maroquinerie</option>
                                                                                     <option value="280" >Parfums & Cosmétiques</option>
                                                                                     <option value="333" >Montres & Joaillerie</option>
@@ -114,8 +133,8 @@
                                     <div class="custom__select">
                                         <select name="contract" id="contract" class="form__select form__select--large form__select--offer" title="Choisissez un type de contrat">
                                             <option value="" selected="selected">Type de contrat</option>
-                                                                                    <option value="2" >Emploi à durée indéterminée</option>
-                                                                                    <option value="45" >Emploi à durée déterminée</option>
+                                                                                    <option value="2" >Emploi é durée indéterminée</option>
+                                                                                    <option value="45" >Emploi é durée déterminée</option>
                                                                                     <option value="3" >Stage</option>
                                                                                     <option value="13" >Contrat d'apprentissage / alternance</option>
                                                                                                     </select>
@@ -124,10 +143,14 @@
 
                                 <br>
                                 <!-- ------------ Insertion annonce  ------------------ -->
-                                <font size = "3" > Annonce</font>
-                                <br>
-                                    <textarea cols="73%" rows="10%" type="text" name="Texte"> </textarea>
-                               
+                                <div class="pui-form__element">                                    
+                                    Annonce
+                                
+                               </div>
+                               <div class="pui-form__element">                                    
+                                
+                                <textarea cols="auto" rows="10%" type="text"> </textarea>
+                           </div>
                                 
                                 <br>
                                 <br>

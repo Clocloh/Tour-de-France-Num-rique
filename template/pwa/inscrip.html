@@ -19,47 +19,22 @@
 
 
 
-    <style>
-        .boutonmenuprincipal {
-        background-color:   #003280;
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding-left:144px;
-        padding-right: 144px;
-        margin-top:10px;
-        font-size: 23px;
-        }
-        .boutonmenuprincipal:hover {
-        background-color: #ff5b22;
-        }
-        .dropdown {
-        position: center;
-        display: inline-block;
-        }
-        .dropdown-child {
-        display: none;
-        background-color: #ff5b22;
-        min-width: 5px;
-        font-size: 20px;
-        }
-        .dropdown-child a {
-        color: white;
-        padding: 20px;
-        text-decoration: none;
-        display: block;
-
-        }
-        .dropdown:hover .dropdown-child {
-        display: block;
-        }
-        </style>
-
 
 </head>
 
 <body class="login">
-
+    <ul>
+        <li><a href="./ajout_annonce.html">Ajouter une annonce</a>
+            <a href="./chat.html"> Chat </a>
+            <a href="./connex.html"> Connexion </a>
+            <a href="./inscrip.html">Inscription </a>
+            <a href="./profil_ecole.html"> Profil ecole </a>
+            <a href="./profil_entreprise.html"> Profil entreprise </a>
+            <a href="./profil_etudiant.html"> Profil etudiant </a>
+            <a href="./rechercher.html"> Rechercher</a>
+        </li>
+        
+      </ul>
     <section class="main-area">
         <div class="container-fluid">
             <div class="row h100">
@@ -82,7 +57,7 @@
         
                                                <div class="pui-form__element">
                                             <label class="animated-label">Prénom</label>
-                                            <input type="text" id="inputEmail" class="form-control" placeholder=""
+                                            <input type="text"  class="form-control" placeholder=""
                                                 required="">
                                         </div>
         
@@ -98,8 +73,8 @@
         
                                               <div class="pui-form__element">
                                             <label class="animated-label">Nom</label>
-                                            <input type="email" id="inputEmail" class="form-control" placeholder=""
-                                                type="text" name="password">
+                                            <input type="email"  class="form-control" placeholder=""
+                                                type="text" >
                                         </div>
                                     
                                 </div>
@@ -125,12 +100,16 @@
                                     </div>
            
                                        <!-- ------------ MENU DEROULANT ------------------ -->
-                                    <div class="dropdown">
-                                        <button class="boutonmenuprincipal">Statut</button>
-                                        <div class="dropdown-child">
-                                        <a href=" ">Etudiant</a>
-                                        <a href=" ">Entreprise</a>
-                                        <a href=" ">Ecole de formation</a>
+                                       <div class="pui-form__element">                                    
+                                        <div class="custom__select">
+                                            <select name="activity" id="activity" class="form__select form__select--large form__select--offer" title="Choisissez un statut">
+                                                <option value="" selected="selected">Statut</option>
+                                                                
+                                                                                        <option value="1" >Ecole</option>
+                                                                                        <option value="2" >Entreprise</option>
+                                                                                        <option value="3" >Etudiant</option>
+                                                                                        
+                                                                                        </select>
                                         </div>
                                     </div>
 
