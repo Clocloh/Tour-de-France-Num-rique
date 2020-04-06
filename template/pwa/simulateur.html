@@ -33,6 +33,7 @@
         }
     </style>
 
+
 </head>
 
 <body>
@@ -91,7 +92,20 @@
 
         <div class="row">
             <div class="col-8">
+
+
+
                     <script>
+
+
+formulaire = document.createElement('FORM');
+titre = document.createElement('LABEL');
+titre.innerHTML = "appartement du crous: ";
+menu = document.createElement('select');
+formulaire.appendChild(titre);
+formulaire.appendChild(menu);
+document.body.appendChild(formulaire);
+
                             var lat = 48.946538,
                                 lng = 2.3632178;
                             var map = L.map('mapid').setView([lat, lng], 14);
@@ -101,9 +115,9 @@
                                 minZoom: 1,
                                 maxZoom: 20
                             }).addTo(map);
-                    
-                     
-                    
+
+       
+
                             //récupère la géolocalisation de l'utilisateur
                             var geo = false;
                             if (navigator.geolocation) {
@@ -113,17 +127,34 @@
                     
                                 });
                             }
-                    
+
+
                             //chargement de la liste des résidences
                             var urlRes = "data/itemsResidencesUniversitaires.json";
+                          
+                    
                             d3.json(urlRes, {crossOrigin: "anonymous"}).then(function(data) {
-                                console.log(data);
-                                d3.select("#lstResUni").selectAll('li').data(data).enter()
-                                    .append('li')
-                                    .attr('class',"list-group-item d-flex justify-content-between align-items-center")
-                                    .html(d => {
-                                        return d["o:title"];
+                                     console.log(data);
+
+
+                             d3.select("#lstResUni").selectAll('li').data(data).enter()
+                                
+                                .append('li')
+                                .attr('class',"list-group-item d-flex justify-content-between align-items-center")
+                                .html(d => {
+                                    
+                                    options = document.createElement('OPTION');
+                                    options.appendChild(document.createTextNode(d));//le texte visible
+                                    options.value = d; //la valeur réel
+  menu.appendChild(options);//on accroche chaque option 
+
+                                   
+ return d["o:title"];
+
                                     })
+
+
+                        
                                     .on("click",d =>{
                                         console.log(d);
                                         let latlng = d["geo:lat_long"][0]["@value"].split(',');
@@ -132,11 +163,18 @@
                                         var markerBounds = L.latLngBounds(latLngs);
                                         map.fitBounds(markerBounds);
                     
+
+
+
                                     });
                             });
-                    
+
+
+
                     
                         </script>
+
+
             </div>
             
         </div>
