@@ -14,12 +14,12 @@
 
 
         <!------ Debut de navigation ---------->
-     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-     <link rel="stylesheet" href="css/navigation.css">
-     <!------ Include the above in your HEAD tag ---------->
-
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/navigation.css">
+        <!------ Include the above in your HEAD tag ---------->
+   
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
@@ -98,13 +98,7 @@
                     <script>
 
 
-formulaire = document.createElement('FORM');
-titre = document.createElement('LABEL');
-titre.innerHTML = "appartement du crous: ";
-menu = document.createElement('select');
-formulaire.appendChild(titre);
-formulaire.appendChild(menu);
-document.body.appendChild(formulaire);
+
 
                             var lat = 48.946538,
                                 lng = 2.3632178;
@@ -116,10 +110,10 @@ document.body.appendChild(formulaire);
                                 maxZoom: 20
                             }).addTo(map);
 
-       
 
-                            //récupère la géolocalisation de l'utilisateur
-                            var geo = false;
+       
+                  //récupère la géolocalisation de l'utilisateur
+                  var geo = false;
                             if (navigator.geolocation) {
                                 navigator.geolocation.getCurrentPosition(function (p) {
                                     geo = p;
@@ -128,34 +122,34 @@ document.body.appendChild(formulaire);
                                 });
                             }
 
-
                             //chargement de la liste des résidences
                             var urlRes = "data/itemsResidencesUniversitaires.json";
-                          
-                    
-                            d3.json(urlRes, {crossOrigin: "anonymous"}).then(function(data) {
-                                     console.log(data);
-
-
-                             d3.select("#lstResUni").selectAll('li').data(data).enter()
-                                
-                                .append('li')
-                                .attr('class',"list-group-item d-flex justify-content-between align-items-center")
-                                .html(d => {
-                                    
-                                    options = document.createElement('OPTION');
-                                    options.appendChild(document.createTextNode(d));//le texte visible
-                                    options.value = d; //la valeur réel
-  menu.appendChild(options);//on accroche chaque option 
-
-                                   
- return d["o:title"];
-
-                                    })
-
-
                         
-                                    .on("click",d =>{
+                                               
+d3.json(urlRes, {crossOrigin: "anonymous"}).then(function(data) {
+
+
+var select =  d3.select("#lstResUni")
+.append("div")
+.append("select")
+select.on("change", function(d) {
+var value = d3.select(this).property("value");
+alert(value);
+});
+
+select.selectAll("option")
+.data(data)
+.enter()
+.append("option")
+.attr("value", function (d) {  return d["o:title"]; })
+.text(function (d) { return d["o:title"]; })
+
+
+
+
+
+
+                           .on("click",d =>{
                                         console.log(d);
                                         let latlng = d["geo:lat_long"][0]["@value"].split(',');
                                         let m = L.marker([latlng[0], latlng[1]]).addTo(map);
