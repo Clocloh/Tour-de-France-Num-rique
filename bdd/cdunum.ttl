@@ -9,7 +9,6 @@
 <https://compagnonsdunumerique.fr/onto/cdunum> a owl:Ontology ;
     dcterms:title "Formation Université Paris 8" .
 
-
 cdunum:HasFormation a rdf:Property ;
     rdfs:label "A comme formation" ;
     rdfs:domain o:Resource ;
@@ -20,6 +19,20 @@ cdunum:HasFormation a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+  cdunum:HasStage a rdf:Property ;
+    rdfs:label "A comme stage" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+  cdunum:HasLogement a rdf:Property ;
+    rdfs:label "A comme logement" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+  cdunum:HasEntreprise a rdf:Property ;
+    rdfs:label "A comme entreprise" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
 
 cdunum:Datedebut a rdf:Property ;
     rdfs:label "Date de début" ;
@@ -61,3 +74,10 @@ cdunum:Domaine a rdf:Property ;
     rdfs:label "Domaine" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
+
+cdunum:Niveau a rdf:Property ;
+    rdfs:label "Niveau" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+    
