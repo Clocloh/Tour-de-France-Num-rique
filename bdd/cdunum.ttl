@@ -8,6 +8,7 @@
 
 <https://compagnonsdunumerique.fr/onto/cdunum> a owl:Ontology ;
     dcterms:title "Formation Université Paris 8" .
+    
 
 cdunum:HasFormation a rdf:Property ;
     rdfs:label "A comme formation" ;
@@ -80,4 +81,136 @@ cdunum:Niveau a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+cdunum:NomEntreprise a rdf:Property ;
+    rdfs:label "NomEntreprise" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:Telephone a rdf:Property ;
+    rdfs:label "Telephone" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:AdresseSiege a rdf:Property ;
+    rdfs:label "AdresseSiege" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:Ville a rdf:Property ;
+    rdfs:label "Ville" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:Pays a rdf:Property ;
+    rdfs:label "Pays" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:PresentationEntreprise a rdf:Property ;
+    rdfs:label "PresentationEntreprise" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:metier a rdf:Property ;
+    rdfs:label "metier" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:HasAnnonce a rdf:Property ;
+    rdfs:label "A comme annonce" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:HasItineraireEtude a rdf:Property ;
+    rdfs:label "A comme itineraireEtude" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:HasreponseItineraireEtude a rdf:Property ;
+    rdfs:label "A comme reponseItineraireEtude" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:Mail a rdf:Property ;
+    rdfs:label "Mail" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:MotDePasse a rdf:Property ;
+    rdfs:label "MotDePasse" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:HasEtudiant a rdf:Property ;
+    rdfs:label "A comme etudiant" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:HasEcole a rdf:Property ;
+    rdfs:label "A comme ecole" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:Logement a rdfs:Class ;
+    rdfs:label "Logement" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:Diplome a rdfs:Class ;
+    rdfs:label "Diplome" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+cdunum:Annonce a rdfs:Class ;
+    rdfs:label "Annonce" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:Stage a rdfs:Class ;
+    rdfs:label "Stage" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:Formation a rdfs:Class ;
+    rdfs:label "Formation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
     
+cdunum:Ecole a rdfs:Class ;
+    rdfs:label "Ecole" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:Entreprise a rdfs:Class ;
+    rdfs:label "Entreprise" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:Etudiant a rdfs:Class ;
+    rdfs:label "Etudiant" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:Etudiant a rdfs:Class ;
+    rdfs:label "Etudiant" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+cdunum:itineraireEtude a rdfs:Class ;
+    rdfs:label "itineraireEtude" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
