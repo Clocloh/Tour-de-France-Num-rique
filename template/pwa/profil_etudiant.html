@@ -121,25 +121,34 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"DLSU Phy
              <a href="./ajout_annonce.html"a>CDN </a>
           </li>
           <li>
-             <a href="./chat.html"><i class="glyphicon glyphicon-send"></i> Chat</a>
+            <a href="./profil_etudiant.html"><i class="glyphicon glyphicon-folder-open"></i> Profil etudiant</a>
+         </li>
+
+          <li>
+            <a href="./profil_ecole.html"><i class="fa fa-graduation-cap"></i> Profil ecole</a>
+         </li>
+         <li>
+            <a href="./profil_entreprise.html"><i class="glyphicon glyphicon-briefcase"></i> Profil entreprise</a>
+         </li>
+
+         <li>
+            <a href="./simulateur.html"><i class="glyphicon glyphicon-road"></i> Itineraire d'étude </a>
+         </li>
+         
+          <li>
+             <a href="./chat.html"><i class="fa fa-comments"></i> Discussion </a>
           </li>
+
           <li>
-                <a href="./simulateur.html"><i class="glyphicon glyphicon-road"></i> Simultauer </a>
-             </li>
-          <li>
-             <a href="./inscrip.html"><i class="glyphicon glyphicon-user"></i> inscription</a>
+             <a href="./inscrip.html"><i class="glyphicon glyphicon-user"></i> Inscription </a>
           </li>
+
           <li>
-             <a href="./profil_ecole.html"><i class="glyphicon glyphicon-home"></i> Profil ecole</a>
-          </li>
+            <a href="./connex.html"><i class="fa fa-user-circle"></i> Connexion </a>
+         </li>
+
           <li>
-             <a href="./profil_entreprise.html"><i class="glyphicon glyphicon-briefcase"></i> Profile entreprise</a>
-          </li>
-          <li>
-                <a href="./profil_etudiant.html"><i class="glyphicon glyphicon-folder-open"></i> Profile etudiant</a>
-             </li>
-          <li>
-             <a href="./rechercher.html"><i class="glyphicon glyphicon-search"></i> Rechercher</a>
+             <a href="./rechercher.html"><i class="glyphicon glyphicon-search"></i> Rechercher </a>
           </li>
        </ul>
     </nav>
@@ -236,9 +245,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"DLSU Phy
             Année d'étude
             
           </label>
-          <div id="cid_8" class="form-input-wide ">
-            <span class="form-sub-label-container " style="vertical-align:top">
-              <select class="form__select form__select--large form__select--offer validate[required]" id="input_8" name="q8_yearLevel8" style="width:250px" data-component="dropdown"  aria-labelledby="label_8 sublabel_input_8">
+          <div>
+            <span>
+              <select class="pui-form__element">
                 <option value="">  </option>
                 <option value="1"> 1 ère année </option>
                 <option value="2"> 2 ème année </option>
@@ -307,7 +316,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"DLSU Phy
                 <tr>
                   <td colSpan="2">
                     <div class="pui-form__element">
-                      <label class="animated-label">Adresse de la rue</label>
+                      <label class="animated-label">Ville</label>
                       <input type="text" id="" class="form-control" placeholder="" >
                   </div>
                   </td>
@@ -315,32 +324,20 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"DLSU Phy
                 <tr>
                   <td colSpan="2">
                     <div class="pui-form__element">
-                      <label class="animated-label">Adresse de la rue 2</label>
+                      <label class="animated-label">Adresse</label>
                       <input type="text" id="" class="form-control" placeholder="" >
                   </div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <div class="pui-form__element">
-                      <label class="animated-label">Ville</label>
-                      <input type="text" id="" class="form-control" placeholder="" >
-                  </div>
-                  </td>
-                  <td>
-                    <div class="pui-form__element">
-                      <label class="animated-label">Région</label>
-                      <input type="text" id="" class="form-control" placeholder="" >
-                  </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
+                  <td colSpan="2">
                     <div class="pui-form__element">
                       <label class="animated-label">Code Postal</label>
                       <input type="text" id="" class="form-control" placeholder="" >
                   </div>
                   </td>
+                </tr>
+               
                   <td>
                     <span class="form-sub-label-container " style="vertical-align:top">
                       <select class="form__select form__select--large form__select--offer validate[required] form-address-country noTranslate">
@@ -545,30 +542,6 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"DLSU Phy
               </tbody>
             </table>
           </div>
-        </li>
-        <li class="form-line ">
-          <div class="pui-form__element">
-            <label class="animated-label">Représentant légal</label>
-            <input type="text" id="" class="form-control" placeholder="" >
-        </div>
-        </li>
-        <li class="form-line ">
-          <div class="pui-form__element">
-             <label class="animated-label">
-               
-            Adresse du représentant légal en cas d'urgence
-              </label>
-            <input type="text" id="" class="form-control" placeholder="">        
-        </div>
-        </li>
-        <li class="form-line ">
-          <div class="pui-form__element">
-             <label class="animated-label">
-               
-            Numéro de téléphone du représentant légal
-              </label>
-            <input type="text" id="" class="form-control" placeholder="">        
-        </div>
         </li>
         <li class="form-line ">
           <label class="form-label form-label-left form-label-auto">
