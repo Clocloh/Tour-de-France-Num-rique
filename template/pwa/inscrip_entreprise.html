@@ -123,8 +123,8 @@
         
                                               <div class="pui-form__element">
                                             <label class="animated-label">Nom</label>
-                                            <input type="email"  class="form-control" placeholder=""
-                                                type="text" >
+                                            <input type="text"  class="form-control" placeholder=""
+                                                 >
                                         </div>
                                     
                                 </div>
@@ -133,6 +133,13 @@
                                         </tr>
         
                                        </table> 
+
+                                      <!-- ------------ NOM DE LA SOCIETE ------------------ -->
+                                    <div class="pui-form__element">
+                                        <label class="animated-label">Nom de la société</label>
+                                        <input type="text" id="inputEmail" class="form-control" placeholder=""
+                                            required="">
+                                    </div> 
 
 
                                     <!-- ------------ ADRESSE MAIL ------------------ -->
@@ -152,15 +159,13 @@
                                        <!-- ------------ MENU DEROULANT ------------------ -->
                                        <div class="pui-form__element">                                    
                                         <div class="custom__select">
-                                                <select  name="activity" id="activity" class="form__select form__select--large form__select--offer" title="Choisissez un statut" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
-                                                    <option value="inscrip">Statut</option>
-                                                    <option value="inscrip_etudiant">Etudiant</option>
-                                                    <option value="inscrip_ecole">Ecole</option>
-                                                    <option value="inscrip_entreprise">Entreprise</option>
+                                            <select  name="activity" id="activity" class="form__select form__select--large form__select--offer" title="Choisissez un statut" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+                                                <option value="inscrip">Statut</option>
+                                                <option value="inscrip_etudiant">Etudiant</option>
+                                                <option value="inscrip_ecole">Ecole</option>
+                                                <option value="inscrip_entreprise">Entreprise</option>
 
-                                          </select>
-
-                                               
+                                      </select>
                                         </div>
                                     </div>
 
