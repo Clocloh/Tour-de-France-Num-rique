@@ -152,9 +152,6 @@
                                         });
                                 }
 
-
-
-
                                 // -------------------------------------------------------------------
                                 // DEBUT Chargement de la liste des résidence du Crous
                                 // -------------------------------------------------------------------//
@@ -211,15 +208,15 @@
                                             .data(data)
                                             .enter()
                                             .append("option")
-                                            .html(i => {
-                                                return i["o:title"];
+                                            .html(d => {
+                                                return d["o:title"];
 
                                             })
 
                                             //Relation click entre le menu et la carte et ajout du marker and zoom in
-                                            .on("click", i => {
-                                                console.log(i);
-                                                let latlng = i["geo:lat_long"][0]["@value"].split(',');
+                                            .on("click", d => {
+                                                console.log(d);
+                                                let latlng = d["geo:lat_long"][0]["@value"].split(',');
                                                 let m = L
                                                     .marker([
                                                         latlng[0], latlng[1]
@@ -252,15 +249,15 @@
                                             .data(data)
                                             .enter()
                                             .append("option")
-                                            .html(e => {
-                                                return e["o:title"];
+                                            .html(d => {
+                                                return d["o:title"];
 
                                             })
 
                                             //Relation click entre le menu et la carte et ajout du marker and zoom in
-                                            .on("click", e => {
-                                                console.log(e);
-                                                let latlng = e["geo:lat_long"][0]["@value"].split(',');
+                                            .on("click", d => {
+                                                console.log(d);
+                                                let latlng = d["geo:lat_long"][0]["@value"].split(',');
                                                 let m = L
                                                     .marker([
                                                         latlng[0], latlng[1]
