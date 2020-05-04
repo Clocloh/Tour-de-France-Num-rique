@@ -13,6 +13,18 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <script src="js/main_pwa.js"></script>
+        <link rel="manifest" href="./manifest.json">
+        <meta name="theme-color" content="white"/>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+    <meta name="theme-color" content="white"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Hello World">
+    <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    
         <link
             rel="stylesheet"
             href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -45,7 +57,8 @@
 
     </head>
 
-    <body>
+    <body class="fullscreen">
+        <div class="container_pwa">
 
         <!------ DEBUT NAVIGATION ---------->
         <div id="wrapper" class="">
@@ -280,8 +293,8 @@
 
             </div>
         </div>
-    </div>
+    </div> 
 
     <script src="js/navigation.js"></script>
 </body>
-<html>
+</html>
