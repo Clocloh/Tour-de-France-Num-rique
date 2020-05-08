@@ -13,6 +13,11 @@ var filesToCache = [
 'connex.html',
 'chat.html',
 'ajout_annonce.html',
+'./css/navigation.css',
+'./css/chat.css',
+'./css/navigation.js',
+'./css/main.js',
+'./css/chat.js',
 './inscrip.html',
 './css/style.css',
 './js/main_pwa.js'
