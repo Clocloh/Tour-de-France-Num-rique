@@ -1,4 +1,4 @@
-var cacheName = 'hello-pwa';
+var cacheName = 'cdn-pwa';
 var filesToCache = [
 './',
 'simulateur.html',
