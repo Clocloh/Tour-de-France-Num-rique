@@ -12,15 +12,15 @@ Les recruteurs pourront publier plus facilement des annonces pour pouvoir trouve
 
 Avec "Les compagnons du numérique" vous pourrez :
 
-rechercher une école, entreprise, stage en utilisant notre page de recherche et en remplissant les informations nécessaires à la recherche (localisation, métier, niveau d'étude).
+- rechercher une école, entreprise, stage en utilisant notre page de recherche et en remplissant les informations nécessaires à la recherche (localisation, métier, niveau d'étude).
 
-se connecter ou s'inscrire sur notre plateforme.
+- se connecter ou s'inscrire sur notre plateforme.
 
-accéder à notre carte et simuler un itinéraire de formation et de stage selon le niveau d'étude.
+- accéder à notre carte et simuler un itinéraire de formation et de stage selon le niveau d'étude.
 
-communiquer avec différents acteurs (recruteur, école, étudiant) grâce à notre chat.
+- communiquer avec différents acteurs (recruteur, école, étudiant) grâce à notre chat.
 
-visiter le profil des utilisateurs.
+- visiter le profil des utilisateurs.
 
 Nous accompagnons nos utilisateurs dans leur parcours professionnel en leur apportant notre solution numérique, pour pouvoir atteindre leur objectif, que ce soit un étudiant ou un 
 professionnel.
